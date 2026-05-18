@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Rui Yao Bond</title>
+    <link>https://ruiyao.bond/</link>
+    <description>技术、AI、工程实践和数字生活记录。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>第一篇：这个博客准备写什么</title>
+      <link>https://ruiyao.bond/</link>
+      <guid>https://ruiyao.bond/#first-post</guid>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0800</pubDate>
+      <description>先把 ruiyao.bond 作为一个长期记录空间跑起来。</description>
+    </item>
+  </channel>
+</rss>

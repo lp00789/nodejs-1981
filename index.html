@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rui Yao Bond | 科技博客</title>
+    <meta name="description" content="Rui Yao Bond 是一个记录技术、AI、工程实践和数字生活的个人博客。">
+    <meta name="theme-color" content="#08111f">
+    <meta property="og:title" content="Rui Yao Bond | 科技博客">
+    <meta property="og:description" content="记录技术、AI、工程实践和数字生活。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruiyao.bond/">
+    <link rel="canonical" href="https://ruiyao.bond/">
+    <link rel="alternate" type="application/rss+xml" title="Rui Yao Bond RSS" href="/feed.xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="signal-field" id="signalField" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Rui Yao Bond 首页">
+        <span class="brand-mark">RY</span>
+        <span>ruiyao.bond</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#posts">文章</a>
+        <a href="#notes">笔记</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">TECH BLOG / AI / ENGINEERING</p>
+          <h1>把复杂问题拆成清晰系统。</h1>
+          <p class="hero-text">
+            这里会记录技术探索、AI 工具、工程实践和一些数字生活观察。内容还在生长，先把空间搭好，让想法有地方落地。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#posts">浏览文章</a>
+            <a class="button ghost" href="https://ruiyao.bond" aria-label="访问 ruiyao.bond">ruiyao.bond</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="抽象科技信号图">
+          <div class="orbital">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="terminal-panel">
+            <div class="panel-top">
+              <i></i><i></i><i></i>
+            </div>
+            <pre><code>const blog = {
+  domain: "ruiyao.bond",
+  stack: "static + cloudflare",
+  status: "building"
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-strip" id="posts" aria-labelledby="posts-title">
+        <div class="section-heading">
+          <p class="eyebrow">LATEST POSTS</p>
+          <h2 id="posts-title">近期文章</h2>
+        </div>
+        <div class="post-grid" id="postGrid"></div>
+      </section>
+
+      <section class="two-column" id="notes" aria-labelledby="notes-title">
+        <div>
+          <p class="eyebrow">FIELD NOTES</p>
+          <h2 id="notes-title">准备写的方向</h2>
+        </div>
+        <div class="note-list">
+          <article>
+            <span>01</span>
+            <h3>AI 工具链</h3>
+            <p>模型使用、提示词、自动化工作流和本地工具组合。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>工程实践</h3>
+            <p>代码结构、部署、性能、安全和踩坑记录。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>数字生活</h3>
+            <p>设备、软件、效率系统，以及长期可维护的个人知识库。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-band" id="about">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>这是 ruiyao.bond 的起点。</h2>
+        </div>
+        <p>
+          现在先用占位内容把站点结构跑通。等你想好博客名称、头像、第一篇文章主题后，我可以继续帮你改成正式版，并接上 Cloudflare Pages 自动部署。
+        </p>
+      </section>
+    </main>
+
+    <div class="reader" id="reader" hidden>
+      <div class="reader-backdrop" data-close-reader></div>
+      <article class="reader-panel" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+        <button class="reader-close" type="button" data-close-reader aria-label="关闭文章">×</button>
+        <p class="eyebrow" id="readerMeta"></p>
+        <h2 id="readerTitle"></h2>
+        <div id="readerBody"></div>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      <span>© 2026 Rui Yao Bond</span>
+      <a href="/feed.xml">RSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
